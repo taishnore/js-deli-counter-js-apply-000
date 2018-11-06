@@ -2,7 +2,9 @@
 //One test was "the function properly handles adding multiple people," but the argument "name" can only be one at a time, no?
 //figured it out -- what that test means is: multiple arguments can be passed through the 'name' parameter, and that name will always be added to the end of the array (hence array.push(name)). Basically it's testing to see whether I properly add people to the array - that they are always at the end.
 
-function takeANumber(line, name) {
+var number = 0
+
+function takeANumber(line) {
   line.push(name);
   return `Welcome, ${name}. You are number ${line.length} in line.`
 }
